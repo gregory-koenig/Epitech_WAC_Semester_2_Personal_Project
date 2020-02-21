@@ -1,0 +1,46 @@
+<div class="columns login-columns">
+    <div class="column"></div>
+
+    <div class="column is-one-fifths login-box">
+        <div class="box-form">
+            <h3 class="title is-3 login-title">CONNEXION</h3>
+
+            <form class="login-form" action="{{ path("fos_user_security_check") }}" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+
+                <div class="field login-field">
+                    <label class="label login-label label-mail" for="username">Adresse e-mail</label>
+
+                    <div class="control">
+                        <input class="input input-form" type="email" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" placeholder="prenom.nom@epitech.eu" />
+                    </div>
+                </div>
+
+                <div class="field login-field field-password">
+                    <label class="label login-label label-password" for="password">Mot de passe</label>
+
+                    <div class="control">
+                        <input class="input input-form" type="password" id="password" name="_password" required="required" autocomplete="current-password" placeholder="*********" />
+                    </div>
+                </div>
+
+                <input type="hidden" name="_target_path" value="{{ path('webacademie_intranet_dashboard') }}" />
+
+                <div class="has-text-centered box-button">
+                    <input class="button is-rounded button-form" type="submit" id="_submit" name="_submit" value="Me connecter" />
+                </div>
+            </form>
+        </div>
+
+        {% if error %}
+            <div class="notification is-danger">
+                <button class="delete"></button>
+                L'identifiant ou le mot de passe est erroné.
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="column"></div>
+</div>

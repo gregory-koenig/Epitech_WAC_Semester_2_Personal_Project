@@ -1,0 +1,19 @@
+webacademie_intranet_homepage:
+    path:     /
+    defaults: { _controller: WebacademieIntranetBundle:Tutorial:index }
+
+webacademie_intranet_chapter:
+    path:     /chapter
+    defaults: { _controller: WebacademieIntranetBundle:Tutorial:chapter }
+
+webacademie_intranet_video:
+    path:     /video
+    defaults: { _controller: WebacademieIntranetBundle:Tutorial:video }
+
+webacademie_intranet_exercise:
+    path:     /exercise
+    defaults: { _controller: WebacademieIntranetBundle:Tutorial:exercise }
+
+webacademie_intranet_dashboard:
+    path:     /dashboard
+    defaults: { _controller: WebacademieIntranetBundle:Tutorial:dashboard }

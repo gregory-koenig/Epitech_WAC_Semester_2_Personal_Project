@@ -1,0 +1,62 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="fos_user_user_show">
+	<h3 class="title is-3 profile-title">PROFIL</h3>
+
+	<div class="columns">
+		<div class="column">
+			<img class="profile-photo" src="{{ user.photo }}" alt="Photo" />
+
+		    <p class="profile-name">{{ user.firstName }} {{ user.lastName }}</p>
+
+			<div class="field profile-field">
+	            <label class="label profile-label label-mail" for="username">Adresse e-mail</label>
+
+	            <div class="control profile-input">
+	            	<p>{{ user.email }}</p>
+	            </div>
+	        </div>
+
+			<div class="field profile-field">
+	            <label class="label profile-label label-wac" for="username">Web@cadémie</label>
+
+	            <div class="control profile-input">
+	            	<p>{{ user.webacademie }}</p>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="column">
+	    	<form class="profile-form" action="" method="">
+                <div class="field profile-form-field form-password">
+                    <label class="label profile-label label-password" for="password">Mot de passe</label>
+
+                    <div class="control">
+                        <input class="input input-form" type="password" id="password" name="_password" autocomplete="new-password" placeholder="*********" />
+                    </div>
+                </div>
+
+                <div class="field profile-form-field form-confirm-password">
+                    <label class="label profile-label label-confirm-password" for="confirmed-password">Confirmer mot de passe</label>
+
+                    <div class="control">
+                        <input class="input input-form" type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" placeholder="*********" />
+
+                    </div>
+                </div>
+
+                <div class="field profile-form-field form-address">
+                    <label class="label profile-label label-address" for="address">Adresse</label>
+
+                    <div class="control">
+                        <input class="input input-form" type="text" id="address" name="address" autocomplete="current-password" value="{{ user.address }}" />
+                    </div>
+                </div>
+
+                <div class="has-text-centered form-button">
+                    <input class="button is-rounded button-form" type="submit" id="_submit" name="_submit" value="Modifier" />
+                </div>
+            </form>
+	    </div>
+    </div>
+</div>

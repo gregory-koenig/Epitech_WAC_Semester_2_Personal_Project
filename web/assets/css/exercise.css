@@ -1,0 +1,9 @@
+.menu-logout {
+	margin-top: 31%;
+}
+
+@media screen and (min-width: 1920px) {
+	.menu-logout {
+		margin-top: 45%;
+	}
+}

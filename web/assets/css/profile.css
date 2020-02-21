@@ -1,0 +1,266 @@
+.profile-box {
+	margin-top: 8.5%;
+	margin-left: 33%;
+	padding: 6% 3.5%;
+	background-color: #FFFFFF !important;
+}
+
+.profile-title {
+	padding-bottom: 4%;
+	color: #0079EA;
+	font-weight: 900;
+	text-align: center;
+}
+
+.profile-photo {
+	overflow: hidden;
+    border-radius: 100px;
+}
+
+.profile-name {
+	padding-top: 8%;
+	padding-bottom: 8%;
+	padding-left: 5%;
+	font-size: 1.625rem;
+	font-weight: bold;
+}
+
+.profile-form {
+	margin-top: 41.5%;
+}
+
+.input-form, .input-form:hover, .input-form:enabled {
+	box-shadow: none;
+
+	border: 1px solid transparent;
+}
+
+.profile-label {
+	color: #0079EA;
+	font-weight: normal;
+	background-color: #FFFFFF;
+}
+
+.profile-field {
+	margin-top: 6%;
+	border: 1px solid #0079EA;
+	border-radius: 25px;
+	padding: 3% 6%;
+}
+
+.profile-input {
+	padding-left: 4.5%;
+}
+
+.label-mail {
+	position: absolute;
+	top: 67.7%;
+	left: 10%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	z-index: 2;
+}
+
+.label-wac {
+	position: absolute;
+	top: 78%;
+	left: 10%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	z-index: 2;
+}
+
+.button-form {
+	width: 100%;
+	height: auto;
+	margin-top: 3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+	border: 0px solid transparent;
+	background-color: #0079EA;
+
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.button-form:hover {
+	background-color: #0F273E;
+
+	color: #FFFFFF;
+}
+
+.button-form:focus {
+	color: #FFFFFF;
+}
+
+.label-password {
+	position: absolute;
+	top: 46%;
+	left: 55.5%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	z-index: 2;
+}
+
+.label-confirm-password {
+	position: absolute;
+	top: 56.9%;
+	left: 55.5%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	z-index: 2;
+}
+
+.label-address {
+	position: absolute;
+	top: 67.4%;
+	left: 55.5%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	z-index: 2;
+}
+
+.profile-form-field {
+	padding: 1% 6%;
+
+	border: 1px solid #0079EA;
+	border-radius: 25px;
+}
+
+.profile-form-field:hover {
+	border-color: #0F273E;
+}
+
+.profile-form-field:hover .profile-label {
+	color: #0F273E;
+}
+
+.profile-form-field:focus-within, .profile-form-field:focus-within .profile-label {
+	border-color: #0F273E;
+
+	color: #0F273E;
+}
+
+.form-address {
+	margin-top: 6.5%;
+}
+
+.form-confirm-password {
+	margin-top: 6.5%;
+}
+
+@media screen and (max-width: 375px) {
+	.profile-box {
+		margin-right: 10%;
+		margin-bottom: 10%;
+		margin-left: 10%;
+	}
+
+	.label-mail {
+		top: 40.1%;
+		left: 13%;
+	}
+
+	.label-wac {
+		top: 47.1%;
+		left: 13%;
+	}
+
+	.label-password {
+		top: 69.1%;
+		left: 13%;
+	}
+
+	.label-confirm-password {
+		top: 76.4%;
+		left: 13%;
+	}
+
+	.label-address {
+		top: 83.6%;
+		left: 13%;
+	}
+}
+
+@media screen and (max-width: 768px)  and (min-width: 376px) {
+	.profile-box {
+		margin-right: 10%;
+		margin-bottom: 10%;
+		margin-left: 10%;
+	}
+
+	.label-mail {
+		top: 35.9%;
+		left: 11.5%;
+	}
+
+	.label-wac {
+		top: 43.6%;
+		left: 11.5%;
+	}
+
+	.profile-input {
+		padding-left: 2.5%;
+	}
+
+	.label-password {
+		top: 70%;
+		left: 11.5%;
+	}
+
+	.label-confirm-password {
+		top: 77%;
+		left: 11.5%;
+	}
+
+	.label-address {
+		top: 84%;
+		left: 11.5%;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.profile-field {
+		padding-top: 2.3%;
+		padding-bottom: 2.3%;
+	}
+
+	.profile-form {
+		margin-top: 29.5%;
+	}
+
+	.label-mail {
+		top: 66.7%;
+		left: 9.7%;
+	}
+
+	.label-wac {
+		top: 77.1%;
+		left: 9.7%;
+	}
+
+	.form-button {
+		margin-top: 3.5%;
+	}
+
+	.button-form {
+		padding-top: 2.3%;
+		padding-bottom: 2.3%;
+	}
+
+	.label-password {
+		top: 45.7%;
+		left: 54%;
+	}
+
+	.label-confirm-password {
+		top: 56.2%;
+		left: 54%;
+	}
+
+	.label-address {
+		top: 66.7%;
+		left: 54%;
+	}
+}

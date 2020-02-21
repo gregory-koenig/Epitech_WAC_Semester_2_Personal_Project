@@ -1,0 +1,183 @@
+{% extends '@WebacademieIntranet/layout.html.twig' %}
+
+{% block title %}
+	Tableau de bord
+{% endblock title %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    
+    <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}" />
+{% endblock stylesheets %}
+
+{% block navbar_menu_list %}
+    <a href="{{ path('webacademie_intranet_dashboard') }}" class="navbar-item">TABLEAU DE BORD</a>
+    <a href="{{ path('webacademie_intranet_homepage') }}" class="navbar-item is-active">TUTORIELS</a>
+    <a href="{{ path('fos_user_profile_show') }}" class="navbar-item">PROFIL</a>
+{% endblock navbar_menu_list %}
+
+{% block menu_list %}
+	<li>
+        <a href="{{ path('webacademie_intranet_dashboard') }}" class="sidebar-label" id="dashboard-label">
+            <img id="dashboard-img" src="{{ asset('assets/images/icons/white/dashboard.png') }}" alt="Icône Tableau de bord" />
+            TABLEAU DE BORD
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ path('webacademie_intranet_homepage') }}" class="sidebar-label sidebar-active" id="tutorial-label">
+            <img id="tutorial-img" src="{{ asset('assets/images/icons/blue/tutorial.png') }}" alt="Icône Tutoriels" />
+            TUTORIELS
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ path('fos_user_profile_show') }}" class="sidebar-label" id="profile-label">
+            <img id="profile-img" src="{{ asset('assets/images/icons/white/profile.png') }}" alt="Icône Profil" />
+            PROFIL
+        </a>
+    </li>
+{% endblock menu_list %}
+
+{% block webacademieintranet_body %}
+    <nav class="navbar is-hidden-mobile index-navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Semestre 1</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">Semestre 2</a>
+                </div>
+            </div>
+
+            <a class="navbar-item img-php" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+            </a>
+
+            <a class="navbar-item img-js" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/javascript.png') }}" />
+            </a>
+
+            <a class="navbar-item img-html" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/html5-512px.png') }}" />
+            </a>
+
+            <a class="navbar-item img-css" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/css3.png') }}" />
+            </a>
+
+            <a class="navbar-item img-sym" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/symfony.png') }}" />
+            </a>
+
+            <a class="navbar-item img-jq" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/jquery.png') }}" />
+            </a>
+
+            <a class="navbar-item img-sass" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/sass.png') }}" />
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+                <a class="navbar-link">Semestre 1</a>
+                <a class="navbar-link" href="#">Semestre 2</a>
+        </div>
+    </nav>
+
+    <nav class="navbar is-hidden-desktop navbar-ipad" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+            </a>
+
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/javascript.png') }}" />
+            </a>
+
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/html5-512px.png') }}" />
+            </a>
+
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/css3.png') }}" />
+            </a>
+
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/symfony.png') }}" />
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/jquery.png') }}" />
+            </a>
+
+            <a class="navbar-item" href="#">
+                <img class="img-navbar" src="{{ asset('assets/images/logos/languages/sass.png') }}" />
+            </a>
+        </div>
+    </nav>
+
+    <div class="index-table">
+        <p class="table-title">Liste des tutoriels</p>
+
+        <table class="table">
+            <tr class="table-stripe">
+                <td class="cell-img">
+                    <img class="table-img" src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+                </td>
+                <td>PHP - Les variables</td>
+                <td>10 min</td>
+                <td>
+                    <a href="{{ path('webacademie_intranet_chapter') }}">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img class="table-img" src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+                </td>
+                <td>PHP - Les fonctions</td>
+                <td>20 min</td>
+                <td>
+                    <a href="{{ path('webacademie_intranet_chapter') }}">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+
+            <tr class="table-stripe">
+                <td>
+                    <img class="table-img" src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+                </td>
+                <td>PHP - Les classes</td>
+                <td>35 min</td>
+                <td>
+                    <a href="{{ path('webacademie_intranet_chapter') }}">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img class="table-img" src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+                </td>
+                <td>PHP - POO</td>
+                <td>45 min</td>
+                <td>
+                    <a href="{{ path('webacademie_intranet_chapter') }}">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+{% endblock webacademieintranet_body %}

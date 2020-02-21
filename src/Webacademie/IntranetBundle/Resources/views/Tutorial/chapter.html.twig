@@ -1,0 +1,145 @@
+{% extends '@WebacademieIntranet/layout.html.twig' %}
+
+{% block title %}
+	Tutoriel - Chapitre 1
+{% endblock title %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    
+    <link rel="stylesheet" href="{{ asset('assets/css/chapter.css') }}" />
+{% endblock stylesheets %}
+
+{% block navbar_menu_list %}
+    <a href="{{ path('webacademie_intranet_dashboard') }}" class="navbar-item">TABLEAU DE BORD</a>
+    <a href="{{ path('webacademie_intranet_homepage') }}" class="navbar-item is-active">TUTORIELS</a>
+
+    <ul class="navbar-list">
+        <li>
+            <a class="navbar-item is-active" href="#">CHAPITRES</a>
+        </li>
+
+        <li>
+            <ul class="navbar-sublist">
+                <li>
+                    <a class="navbar-item is-active" href="#">CHAPITRE 1</a>
+                </li>
+
+                <li>
+                    <a class="navbar-item" href="#">CHAPITRE 2</a>
+                </li>
+
+                <li>
+                    <a class="navbar-item" href="#">CHAPITRE 3</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a class="navbar-item" href="{{ path('webacademie_intranet_video') }}">VIDÉOS</a>
+        </li>
+
+        <li>
+            <a class="navbar-item" href="{{ path('webacademie_intranet_exercise') }}">EXERCICES</a>
+        </li>
+    </ul>
+
+    <a href="{{ path('fos_user_profile_show') }}" class="navbar-item">PROFIL</a>
+{% endblock navbar_menu_list %}
+
+{% block menu_list %}
+	<li>
+        <a href="{{ path('webacademie_intranet_dashboard') }}" class="sidebar-label" id="dashboard-label">
+            <img id="dashboard-img" src="{{ asset('assets/images/icons/white/dashboard.png') }}" alt="Icône Tableau de bord" />
+            TABLEAU DE BORD
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ path('webacademie_intranet_homepage') }}" class="sidebar-label sidebar-active" id="tutorial-label">
+            <img id="tutorial-img" src="{{ asset('assets/images/icons/blue/tutorial.png') }}" alt="Icône Tutoriels" />
+            TUTORIELS
+        </a>
+
+        <ul class="menu-sublist">
+            <li>
+                <a class="menu-item-sublist subitem-is-active" href="#">CHAPITRES</a>
+            </li>
+
+            <li>
+                <ul class="menu-subsublist">
+                    <li>
+                        <a class="menu-item-sublist subitem-is-active" href="#">CHAPITRE 1</a>
+                    </li>
+                    
+                    <li>
+                        <a class="menu-item-sublist" href="#">CHAPITRE 2</a>
+                    </li>
+                    
+                    <li>
+                        <a class="menu-item-sublist" href="#">CHAPITRE 3</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="menu-item-sublist" href="{{ path('webacademie_intranet_video') }}">VIDÉOS</a>
+            </li>
+
+            <li>
+                <a class="menu-item-sublist" href="{{ path('webacademie_intranet_exercise') }}">EXERCICES</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="{{ path('fos_user_profile_show') }}" class="sidebar-label" id="profile-label">
+            <img id="profile-img" src="{{ asset('assets/images/icons/white/profile.png') }}" alt="Icône Profil" />
+            PROFIL
+        </a>
+    </li>
+{% endblock menu_list %}
+
+{% block webacademieintranet_body %}
+    <div>
+        <p>PHP - Les variables</p>
+        <p>Semestre 1</p>
+    </div>
+
+    <nav class="navbar is-hidden-mobile index-navbar" role="navigation" aria-label="main navigation">
+        <img src="{{ asset('assets/images/logos/languages/php-1280px.png') }}" />
+
+        <div class="navbar-brand">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Chapitre 1</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">Chapitre 2</a>
+                    <a class="navbar-item" href="#">Chapitre 3</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <p>Chapitre 1 - Présentation générale</p>
+
+        <p>
+            Il doit y avoir une instruction par ligne.
+            Une ligne ne doit pas excéder 80 colonnes. Cette règle s'applique également pour les commentaires.
+            Une fonction ne doit pas excéder 25 lignes entre les accolades.
+        </p>
+
+        <img src="{{ asset('assets/screens/Capture.png') }}" />
+
+        <ul>
+            <li>
+                <a href="{{ path('webacademie_intranet_video') }}">Vidéo 1</a>
+            </li>
+
+            <li>
+                <a href="{{ path('webacademie_intranet_exercise') }}">Exercice 1</a>
+            </li>
+        </ul>
+    </div>
+{% endblock webacademieintranet_body %}

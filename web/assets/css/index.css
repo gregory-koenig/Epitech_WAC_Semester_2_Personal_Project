@@ -1,0 +1,121 @@
+.content-box {
+	margin-top: 5%;
+	margin-left: 33%;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.index-navbar {
+    padding-right: 0;
+    padding-left: 5%;
+    border-radius: 25px;
+}
+
+.img-navbar {
+    max-height: 2.75rem !important;
+}
+
+.img-php {
+    left: 4%;
+}
+
+.img-js {
+    left: 5%;
+}
+
+.img-html {
+    left: 6%;
+}
+
+.img-css {
+    left: 7%;
+}
+
+.img-sym {
+    left: 8%;
+}
+
+.img-jq {
+    left: 9%;
+}
+
+.img-sass {
+    left: 10%;
+}
+
+.img-navbar:hover {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+
+.table-title {
+    padding-top: 2%;
+    padding-bottom: 8%;
+    padding-left: 3%;
+    font-size: 1.375em !important;
+    font-weight: bold !important;
+}
+
+.index-table {
+    margin-top: 20%;
+    background-color: #FFFFFF !important;
+    border-collapse: collapse;
+}
+
+.index-table td {
+    border: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.index-table img {
+	width: 100% !important;
+	height: auto;
+}
+
+.table-stripe {
+    background-color: #F8F8F8;
+}
+
+.cell-img {
+    width: 10%;
+}
+
+@media screen and (max-width: 375px) {
+    .content-box {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px)  and (min-width: 376px) {
+    .content-box {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .navbar-item {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .content-box {
+        margin-top: 5%;
+        margin-left: 33%;
+        margin-right: 5%;
+    }
+
+    .index-table {
+        margin-top: 15%;
+    }
+
+    .navbar-item {
+        margin-left: 7%;
+    }
+}

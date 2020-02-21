@@ -1,0 +1,41 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block title %}Profil{% endblock title%}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ asset('assets/css/profile.css') }}" />
+{% endblock stylesheets %}
+
+{% block navbar_menu_list %}
+    <a href="{{ path('webacademie_intranet_dashboard') }}" class="navbar-item">TABLEAU DE BORD</a>
+    <a href="{{ path('webacademie_intranet_homepage') }}" class="navbar-item">TUTORIELS</a>
+    <a href="{{ path('fos_user_profile_show') }}" class="navbar-item is-active">PROFIL</a>
+{% endblock navbar_menu_list %}
+
+{% block menu_list %}
+	<li>
+        <a href="{{ path('webacademie_intranet_dashboard') }}" class="sidebar-label" id="dashboard-label">
+            <img id="dashboard-img" src="{{ asset('assets/images/icons/white/dashboard.png') }}" alt="Icône Tableau de bord" />
+            TABLEAU DE BORD
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ path('webacademie_intranet_homepage') }}" class="sidebar-label" id="tutorial-label">
+            <img id="tutorial-img" src="{{ asset('assets/images/icons/white/tutorial.png') }}" alt="Icône Tutoriels" />
+            TUTORIELS
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ path('fos_user_profile_show') }}" class="sidebar-label sidebar-active" id="profile-label">
+            <img id="profile-img" src="{{ asset('assets/images/icons/blue/profile.png') }}" alt="Icône Profil" />
+            PROFIL
+        </a>
+    </li>
+{% endblock menu_list %}
+
+{% block fos_user_content %}
+	{% include "@FOSUser/Profile/show_content.html.twig" %}
+{% endblock fos_user_content %}

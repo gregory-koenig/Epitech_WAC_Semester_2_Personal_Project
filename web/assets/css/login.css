@@ -1,0 +1,180 @@
+html {
+	background-color: #F8F8F8;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #2E2E2E;
+}
+
+.columns-logo, .login-columns {
+	margin-top: 3.1%;
+}
+
+.login-box {
+	margin-top: 3%;
+	padding-top: 5.8%;
+	padding-bottom: 5%;
+	background-color: #FFFFFF;
+}
+
+.login-title {
+	color: #0079EA;
+	font-weight: 900;
+	text-align: center;
+	font-size: 2.125rem !important;
+}
+
+.login-label {
+	color: #0079EA;
+	font-weight: normal;
+}
+
+.login-form {
+	margin-top: 14.7%;
+}
+
+.input-form, .input-form:hover, .input-form:enabled {
+	box-shadow: none;
+	
+	border: 1px solid transparent;
+}
+
+.button-form {
+	width: 100%;
+	height: auto;
+	margin-top: 5.3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+	border: 0px solid transparent;
+	background-color: #0079EA;
+
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.button-form:hover {
+	background-color: #0F273E;
+
+	color: #FFFFFF;
+}
+
+.button-form:focus {
+	color: #FFFFFF;
+}
+
+.box-form {
+	padding-right: 7.5%;
+	padding-left: 7.5%;
+}
+
+.box-button {
+	display: block;
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.login-field {
+	padding: 1% 5.5%;
+
+	border: 1px solid #0079EA;
+	border-radius: 25px;
+}
+
+.login-field:hover {
+	border-color: #0F273E;
+}
+
+.login-field:hover .login-label {
+	color: #0F273E;
+}
+
+.login-field:focus-within, .login-field:focus-within .login-label {
+	border-color: #0F273E;
+
+	color: #0F273E;
+}
+
+.field-password {
+	margin-top: 2rem;
+}
+
+.label-mail {
+	position: absolute;
+	top: 51.9%;
+	left: 38.3%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	z-index: 2;
+
+	background-color: #FFFFFF;
+}
+
+.label-password {
+	position: absolute;
+	top: 61.2%;
+	left: 38.3%;
+	padding-right: 1.2%;
+	padding-left: 0.5%;
+	z-index: 2;
+
+	background-color: #FFFFFF;
+}
+
+.notification {
+	margin-top: 5%;
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	.label-mail {
+		top: 34.7%;
+		left: 19%;
+	}
+
+	.label-password {
+		top: 44.1%;
+		left: 19%;
+	}
+}
+
+@media screen and (max-width: 768px)  and (min-width: 376px) {
+	body {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	.label-mail {
+		top: 43%;
+		left: 17%;
+	}
+
+	.label-password {
+		top: 51%;
+		left: 17%;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.label-mail {
+		top: 57.7%;
+		left: 37.8%;
+	}
+
+	.label-password {
+		top: 65.3%;
+		left: 37.8%;
+	}
+
+	.button-form {
+		padding-top: 2.3%;
+		padding-bottom: 2.3%;
+	}
+}

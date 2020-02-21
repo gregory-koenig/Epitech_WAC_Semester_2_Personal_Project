@@ -1,0 +1,4 @@
+services:
+#    webacademie_intranet.example:
+#        class: Webacademie\IntranetBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
